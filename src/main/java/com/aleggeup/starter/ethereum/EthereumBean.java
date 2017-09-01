@@ -14,15 +14,14 @@ import org.ethereum.facade.EthereumFactory;
 
 public class EthereumBean {
 
-    Ethereum ethereum;
+    private Ethereum ethereum;
 
     public void start(){
         this.ethereum = EthereumFactory.createEthereum();
         this.ethereum.addListener(new EthereumListener(ethereum));
     }
 
-
     public String getBestBlock(){
-        return "" + ethereum.getBlockchain().getBestBlock().getNumber();
+        return String.valueOf(ethereum.getBlockchain().getBestBlock().getNumber());
     }
 }

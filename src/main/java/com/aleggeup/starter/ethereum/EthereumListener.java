@@ -20,8 +20,8 @@ import org.ethereum.util.BIUtil;
 
 public class EthereumListener extends EthereumListenerAdapter {
 
-    Ethereum ethereum;
-    private boolean syncDone = false;
+    private final Ethereum ethereum;
+    private boolean syncDone;
 
     public EthereumListener(final Ethereum ethereum) {
         this.ethereum = ethereum;

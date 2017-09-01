@@ -24,13 +24,16 @@ import com.aleggeup.starter.ethereum.EthereumBean;
 @RestController
 public class MyRestController {
 
+    private final EthereumBean ethereumBean;
+
     @Autowired
-    EthereumBean ethereumBean;
+    public MyRestController(final EthereumBean ethereumBean) {
+        this.ethereumBean = ethereumBean;
+    }
 
     @RequestMapping(value = "/bestBlock", method = GET, produces = APPLICATION_JSON_VALUE)
     @ResponseBody
     public String getBestBlock() throws IOException {
         return ethereumBean.getBestBlock();
     }
-
 }
