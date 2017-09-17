@@ -27,6 +27,12 @@
 
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+
+        <web3j-version>2.3.1</web3j-version>
+        <spring-framework-version>4.2.0.RELEASE</spring-framework-version>
+        <spring-boot-version>1.2.2.RELEASE</spring-boot-version>
+
+        <junit-version>4.12</junit-version>
     </properties>
 
     <dependencies>
@@ -35,21 +41,21 @@
         <dependency>
             <groupId>org.web3j</groupId>
             <artifactId>core</artifactId>
-            <version>2.3.1</version>
+            <version>${web3j-version}</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-            <version>1.2.2.RELEASE</version>
+            <version>${spring-boot-version}</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/junit/junit -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.12</version>
+            <version>${junit-version}</version>
             <scope>test</scope>
         </dependency>
 
@@ -60,7 +66,7 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>1.2.2.RELEASE</version>
+                <version>${spring-boot-version}</version>
 
                 <executions>
                     <execution>
@@ -78,17 +84,17 @@
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-core</artifactId>
-                <version>4.2.0.RELEASE</version>
+                <version>${spring-framework-version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-web</artifactId>
-                <version>4.2.0.RELEASE</version>
+                <version>${spring-framework-version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-webmvc</artifactId>
-                <version>4.2.0.RELEASE</version>
+                <version>${spring-framework-version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
