@@ -7,7 +7,7 @@
  * of the MIT license.  See the LICENSE file for details.
  */
 
-package com.aleggeup.starter.service;
+package com.aleggeup.aithein.service;
 
 import java.io.IOException;
 

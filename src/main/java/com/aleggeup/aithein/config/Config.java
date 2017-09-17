@@ -7,7 +7,7 @@
  * of the MIT license.  See the LICENSE file for details.
  */
 
-package com.aleggeup.starter.config;
+package com.aleggeup.aithein.config;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;

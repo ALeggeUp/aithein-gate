@@ -7,10 +7,11 @@
  * of the MIT license.  See the LICENSE file for details.
  */
 
-package com.aleggeup.starter.config;
+package com.aleggeup.aithein.config;
+
+import static com.aleggeup.aithein.config.Web3jProperties.WEB3J_PREFIX;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import static com.aleggeup.starter.config.Web3jProperties.WEB3J_PREFIX;
 
 @ConfigurationProperties(prefix = WEB3J_PREFIX)
 public class Web3jProperties {
