@@ -30,9 +30,7 @@
 
   <modules>
     <module>application/aithein-gate-parent</module>
-<!--
     <module>application/aithein-gate-frontend</module>
--->
     <module>application/aithein-gate-webapp</module>
   </modules>
 
